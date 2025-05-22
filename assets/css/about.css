@@ -1,81 +1,88 @@
-/*
+/* ABOUT */
 
-    Sellix.me
-    ------------
-    Version 0.2.24
-
-*/
-
-.about{
-    background: var(--backgroundSecondary);
-    padding: 70px 0 60px;
+.section__about{
+    background-color: var(--backgroundSecond);
+    padding: 100px 5%;
 }
 
-.about_title{
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--primary);
+.about__title{
+    font-weight: bold;
+    font-size: 44px;
+    color: var(--colorMain);
 }
 
-.about_description{
-    color: var(--text-secondary);
-    font-weight: 400;
+.about__description{
+    color: var(--colorText);
+    width: 40%;
+    font-weight: normal;
     font-size: 15px;
-    width: 80%;
+    padding-top: 10px;
 }
 
-.about_description::after{
-    content: "";
-    position: static;
-    display: block;
-    border-radius: 100px;
-    margin-top: 35px;
-    margin-bottom: 58px;
-    height: 1.7px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(39,35,51,1) 0%, rgba(19,17,26,0) 75%);
-}
-
-.about_card{
+.about__info{
+    padding-top: 80px;
+    margin-bottom: 15px;
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    color: var(--colorMain);
 }
 
-.about_card_title{
-    color: var(--primary);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about_card_description{
-    color: var(--text-secondary);
-    font-size: 15px;
-    font-weight: 400;
-    width: 90%;
-}
-
-.about_icon{
-    background-color: var(--elements);
-    min-width: 50px;
-    min-height: 50px;
-    max-width: 50px;
-    max-height: 50px;
+.about__square{
+    width: 60px;
+    height: 60px;
+    background-color: var(--backgroundMain);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 23px;
 }
 
-@media only screen and (max-width: 768px) {
-    .about_description{
+.about__info__text{
+    width: 78%;
+}
+
+.about__info__title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.about__info__description{
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .section__about{
+        padding: 50px 5% 80px;
+    }
+
+    .about__title{
+        font-size: 38px;
+    }
+
+    .about__description{
         width: 100%;
+        font-size: 14px;
+        padding-top: 5px;
     }
 
-    .about{
-        padding: 30px 0 10px;
+    .about__info{
+        padding-top: 60px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .about_card_description{
+    .about__square{
+        margin-bottom: 20px;
+    }
+
+    .about__info__text {
         width: 100%;
     }
 }

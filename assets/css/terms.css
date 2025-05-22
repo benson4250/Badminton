@@ -1,61 +1,37 @@
-/*
+/* TERMS */
 
-    Sellix.me
-    ------------
-    Version 0.2.24
-
-*/
-
-.terms{
-    background: var(--backgroundSecondary);
-    padding: 70px 0 60px;
+.section__terms{
+    background-color: var(--backgroundSecond);
+    padding: 6% 6%;
 }
 
-.terms_header{
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--primary);
+.terms__header{
+    color: var(--colorMain);
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
-.terms_subparagraph{
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 15px;
-    width: 80%;
+.terms__header:nth-child(1){
+    margin-top: 0;
 }
 
-.terms_subparagraph::after{
-    content: "";
-    position: static;
-    display: block;
-    border-radius: 100px;
-    margin-top: 25px;
-    margin-bottom: 28px;
-    height: 1.7px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(39,35,51,1) 0%, rgba(19,17,26,0) 75%);
-}
-
-.terms_list{
-    list-style-type: decimal;
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 15px;
+.terms__description{
+    width: 50%;
     margin-bottom: 50px;
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 15px;
 }
 
-.terms_list li{
-    margin-bottom: 8px;
+.terms__paragraph{
+    margin-bottom: 30px;
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 15px;
 }
 
-
-@media only screen and (max-width: 768px) {
-    .terms_subparagraph{
-        width: 100%;
+@media only screen and (max-width: 1100px) {
+    .terms__description{
+        width: 90%;
     }
-
-    .terms{
-        padding: 30px 0 0;
-    }
-    
 }

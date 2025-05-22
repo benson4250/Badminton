@@ -3,112 +3,69 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sellix.me - Standalone website - Terms</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <title>Sellix.me</title>
 
     <!--  CSS  -->
-    <link href="assets\bootstrap\css\bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/colors.css">
-    <link rel="stylesheet" href="./assets/css/head_baner.css">
-    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/terms.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
-    <link rel="stylesheet" href="./assets/css/general.css">
-
-    <!--  Meta  -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="yahoo-bot" content="index, follow">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <link rel="canonical" href="">
-    <meta name="theme-color" content="#CF9816">
-    <meta property="og:type" content="website">
-    <meta name="og:locale" content="en">
-    <meta name="keywords" content="">
-
 </head>
+<body>
 
+<div class="app">
 
-<body ondragstart="return false" ondrag="return false">
+    <div class="section__navbar">
 
-    <div class="head_baner">
-        New offer now
-    </div>
+        <div class="navbar">
 
-    <div class="container-fluid--header">
+            <div class="navbar__header">
+                <a href="" class="navbar__brand">
+                    Sellix.me
+                </a>
 
-        <div class="hero">
+                <div class="navbar__menu" onclick="navbar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14">
+                        <g id="menu" transform="translate(-2 -5)">
+                            <line id="Line_1" data-name="Line 1" x2="15" transform="translate(6 12)" fill="none"
+                                  stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            <line id="Line_2" data-name="Line 2" x2="18" transform="translate(3 6)" fill="none"
+                                  stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            <line id="Line_3" data-name="Line 3" x2="18" transform="translate(3 18)" fill="none"
+                                  stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
 
-            <img src="assets/img/blur_circle_hero.svg" alt="blur" class="hero_blur">
+            <div class="navbar__nav" id="navbarNav">
 
-            <div class="navbar container">
-
-                <div class="navbar_mobile">
-                    <a href="index.html" class="navbar_brand">
-                        Sellix.me
+                <ul>
+                    <a href="index.html" class="navbar__href">
+                        <li class="navbar__link">Home</li>
                     </a>
-    
-                    <div class="navbar_toggle">
-                        <img src="assets/img/burger.svg" onclick="navbar()" alt="burger">
-                    </div>
-                </div>
-
-                <ul class="navbar_nav" id="navbarNav">
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#faq">
-                            FAQ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#reviews">
-                            Reviews
-                        </a>
-                    </li>
-                    <li>
-                        <a href="terms.html" class="active">
-                            Terms
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html#shop" class="navbar_button">
-                            Shop
-                        </a>
-                    </li>
+                    <a href="index.html#about" class="navbar__href">
+                        <li class="navbar__link">About</li>
+                    </a>
+                    <a href="index.html#shop" class="navbar__href">
+                        <li class="navbar__link">Shop</li>
+                    </a>
+                    <a href="index.html#faq" class="navbar__href">
+                        <li class="navbar__link">FAQ</li>
+                    </a>
+                    <a href="index.html#reviews" class="navbar__href">
+                        <li class="navbar__link">Reviews</li>
+                    </a>
+                    <a href="terms.html" class="navbar__href">
+                        <li class="navbar__link active">Terms</li>
+                    </a>
                 </ul>
-
-            </div>
-
-            <div class="container hero_header">
-
-                <div class="hero_content">
-
-                    <h1 class="hero_title">
-                        <span>Terms</span>
-                    </h1>
-    
-                    <p class="hero_description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.
-                    </p>
-
-                </div>
 
             </div>
 
@@ -116,102 +73,182 @@
 
     </div>
 
-    <div class="terms">
-        <div class="container">
-            <h5 class="terms_header">1. General</h5>
-            <h6 class="terms_subparagraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.
-            </h6>
+    <div class="section__header animation">
 
-            <ul class="terms_list">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-            </ul>
+        <div class="header__content">
 
-            <h5 class="terms_header">2. Privacy</h5>
-            <h6 class="terms_subparagraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.
-            </h6>
+            <h1 class="header__title">
+                Terms
+            </h1>
 
-            <ul class="terms_list">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer container">
-        
-        <div class="row">
-
-            <div class="col-lg-6">
-                <h4 class="footer_title">Sellix.me</h4>
-                <p class="footer_description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum. Sed tincidunt purus sit amet magna viverra suscipit.
-                </p>
-                <div class="footer_icons">
-                    <div class="footer_icon">
-                        <a href=""><img src="assets/img/shield-check.svg" alt="icon"></a>
-                    </div>
-                    <div class="footer_icon">
-                        <a href=""><img src="assets/img/shield-check.svg" alt="icon"></a>
-                    </div>
-                    <div class="footer_icon">
-                        <a href=""><img src="assets/img/shield-check.svg" alt="icon"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 footer_nav_links">
-
-                <h5 class="footer_nav_header">Navigation</h5>
-
-                <ul class="footer_nav">
-                    <li><a href="">First</a></li>
-                    <li><a href="">Second</a></li>
-                    <li><a href="">Third</a></li>
-                </ul>
-
-            </div>
-
-            <div class="col-lg-3 footer_nav_links">
-
-                <h5 class="footer_nav_header">Navigation</h5>
-
-                <ul class="footer_nav">
-                    <li><a href="">First</a></li>
-                    <li><a href="">Second</a></li>
-                    <li><a href="">Third</a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div class="footer_footer">
-
-            <p class="footer_copyright">
-                Copyright 2024 TEMPLATE. All rights reserved.
+            <p class="header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim
+                magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl
+                condimentum. Sed tincidunt purus sit amet magna viverra suscipit.
             </p>
 
-            <div class="footer_template">
-                You can get this website template <a href="">here</a>.
+        </div>
+
+    </div>
+
+    <div class="section__terms animation">
+
+        <h1 class="terms__header">1. Lorem ipsum</h1>
+        <p class="terms__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae.</p>
+
+        <p class="terms__paragraph">
+            1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+        <p class="terms__paragraph">
+            1.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+        <p class="terms__paragraph">
+            1.3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+        <h1 class="terms__header">2. Lorem ipsum</h1>
+        <p class="terms__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae.</p>
+
+        <p class="terms__paragraph">
+            2.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+        <p class="terms__paragraph">
+            2.2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+        <p class="terms__paragraph">
+            2.3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim magna nec egestas. Maecenas fermentum est ut velit luctus, vitae vestibulum nisl condimentum.
+            Sed tincidunt purus sit amet magna viverra suscipit. Morbi at feugiat neque. Etiam euismod venenatis lectus, non pulvinar quam venenatis vel. Nulla ac commodo mauris. Nunc sed nulla enim.
+            Proin a mollis ligula. Suspendisse potenti.
+        </p>
+
+    </div>
+
+    <div class="section__footer">
+
+        <div class="row ">
+
+            <div class="col-lg-2">
+
+                <a href="" class="footer__brand">
+                    Sellix.me
+                </a>
+
+                <div class="footer__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan dignissim
+                    magna nec egestas. Maecenas fermentum est ut velit luctus, vitae.
+                </div>
+
+                <div class="footer__social">
+
+                    <a href="">
+                        <div class="footer__social__square">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.674" height="18.799"
+                                 viewBox="0 0 24.674 18.799">
+                                <path id="discord-brands"
+                                      d="M46.92,33.587a.063.063,0,0,0-.032-.029A20.355,20.355,0,0,0,41.865,32a.076.076,0,0,0-.081.038,14.161,14.161,0,0,0-.625,1.284,18.793,18.793,0,0,0-5.641,0,12.99,12.99,0,0,0-.635-1.284A.079.079,0,0,0,34.8,32a20.3,20.3,0,0,0-5.022,1.557.072.072,0,0,0-.033.028A20.809,20.809,0,0,0,26.1,47.624a.085.085,0,0,0,.032.058A20.464,20.464,0,0,0,32.3,50.8a.08.08,0,0,0,.087-.028,14.611,14.611,0,0,0,1.26-2.05.078.078,0,0,0-.043-.109,13.477,13.477,0,0,1-1.925-.917.079.079,0,0,1-.008-.131c.129-.1.259-.2.382-.3a.076.076,0,0,1,.08-.011,14.6,14.6,0,0,0,12.4,0,.076.076,0,0,1,.081.01c.124.1.253.2.383.3a.079.079,0,0,1-.007.131,12.648,12.648,0,0,1-1.926.916.079.079,0,0,0-.042.11,16.41,16.41,0,0,0,1.259,2.048.078.078,0,0,0,.087.029,20.4,20.4,0,0,0,6.171-3.113.079.079,0,0,0,.032-.057A20.672,20.672,0,0,0,46.92,33.587ZM34.245,44.822a2.5,2.5,0,0,1,0-4.972,2.5,2.5,0,0,1,0,4.972Zm8.2,0a2.5,2.5,0,0,1,0-4.972,2.5,2.5,0,0,1,0,4.972Z"
+                                      transform="translate(-26 -31.999)" fill="#f6f6f6"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="footer__social__square">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.344" height="20.221"
+                                 viewBox="0 0 20.344 20.221">
+                                <path id="facebook-brands"
+                                      d="M28.344,18.172A10.172,10.172,0,1,0,16.583,28.221V21.113H14V18.172h2.584V15.931a3.589,3.589,0,0,1,3.842-3.957,15.655,15.655,0,0,1,2.277.2v2.5H21.419a1.47,1.47,0,0,0-1.658,1.589v1.909h2.821l-.451,2.941h-2.37v7.109A10.176,10.176,0,0,0,28.344,18.172Z"
+                                      transform="translate(-8 -8)" fill="#f6f6f6"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="footer__social__square">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.885" height="16.091"
+                                 viewBox="0 0 22.885 16.091">
+                                <path id="youtube-brands"
+                                      d="M37.339,66.518a2.875,2.875,0,0,0-2.023-2.036C33.532,64,26.375,64,26.375,64s-7.156,0-8.941.481a2.876,2.876,0,0,0-2.023,2.036,32.376,32.376,0,0,0,0,11.088,2.833,2.833,0,0,0,2.023,2c1.785.481,8.941.481,8.941.481s7.156,0,8.941-.481a2.833,2.833,0,0,0,2.023-2,32.376,32.376,0,0,0,0-11.088Zm-13.3,8.947V68.659l5.981,3.4Z"
+                                      transform="translate(-14.933 -64)" fill="#f6f6f6"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="footer__copyright">
+                    Copyright 2022 TEMPLATE. All rights reserved.
+                </div>
+
+            </div>
+
+            <div class="col-lg-2">
+
+                <div class="row">
+
+                    <div class="col-lg-2">
+
+                        <h4 class="link__header">Links</h4>
+
+                        <ul class="footer__links">
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-2">
+
+                        <h4 class="link__header">Links</h4>
+
+                        <ul class="footer__links">
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                            <a href="" class="footer__link">
+                                <li>Lorem ipsum link</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
+</div>
+
     <!--  JS  -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/shop.js"></script>
-    <script src="./assets/js/faq.js"></script>
+    <script src="./assets/js/animation.js"></script>
 
 </body>
 </html>

@@ -1,115 +1,66 @@
-/*
+/* REVIEWS */
 
-    Sellix.me
-    ------------
-    Version 0.2.24
-
-*/
-
-.reviews{
-    background: var(--backgroundSecondary);
-    padding: 70px 0 60px;
+.section__reviews{
+    padding: 5% 5% 100px;
+    background-color: var(--backgroundSecond);
 }
 
-.reviews_title{
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--primary);
+.reviews__title{
+    font-weight: bold;
+    font-size: 44px;
+    color: var(--colorMain);
 }
 
-.reviews_description{
-    color: var(--text-secondary);
-    font-weight: 400;
+.reviews__description{
+    color: var(--colorText);
+    width: 40%;
+    font-weight: normal;
     font-size: 15px;
-    width: 80%;
+    padding-top: 10px;
 }
 
-.reviews_description::after{
-    content: "";
-    position: static;
-    display: block;
-    border-radius: 100px;
-    margin-top: 35px;
-    margin-bottom: 38px;
-    height: 1.7px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(39,35,51,1) 0%, rgba(19,17,26,0) 75%);
+.reviews__cards{
+    padding-top: 50px;
 }
 
-.reviews_button{
-    float: right;
-    background: var(--elements);
-    color: var(--primary);
-    padding: 17px 70px;
-    transition: .2s;
-}
-
-.reviews_button:hover{
-    opacity: 0.7;
-    transition: .2s;
-}
-
-.review_card{
-    background: var(--elements);
-    padding: 17px 22px 31px;
+.reviews__card{
+    background-color: var(--backgroundMain);
+    padding: 10%;
     margin-bottom: 20px;
 }
 
-.review_user{
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    align-items: center;
+.reviews__card__name{
+    color: var(--colorMain);
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
-.review_user img{
-    width: 60px;
-    height: 60px;
-    max-height: 60px;
-    max-width: 60px;
+.reviews__stars{
+    margin-bottom: 20px;
 }
 
-.review_user h6{
-    margin-top: 20px;
-    color: var(--primary);
-    font-weight: 500;
+.reviews__card__review{
+    color: var(--colorText);
+    font-weight: normal;
+    font-size: 14px;
 }
 
-.review_user p{
-    font-size: 15px;
-    margin-top: -10px;
-    color: var(--text-secondary);
+.reviews__negative path{
+    stroke: var(--colorText)!important;
 }
 
-.review_stars{
-    display: flex;
-    gap: 8px;
-}
-
-.review_title{
-    color: var(--text-light);
-    margin-top: 30px;
-    margin-bottom: 7px;
-}
-
-.review_description{
-    font-size: 15px;
-    color: var(--text-secondary);
-}
-
-@media only screen and (max-width: 768px) {
-    .reviews_button{
-        margin-bottom: 20px;
-        float: left;
+@media only screen and (max-width: 1100px) {
+    .section__reviews{
+        padding: 60px 5% 80px;
     }
 
-    .reviews{
-        padding: 40px 0 30px;
+    .reviews__title{
+        font-size: 38px;
     }
 
-    .reviews_description{
+    .reviews__description{
         width: 100%;
+        font-size: 14px;
+        padding-top: 5px;
     }
 }
-

@@ -1,76 +1,42 @@
-/*
+/* SHOP */
 
-    Sellix.me
-    ------------
-    Version 0.2.24
-
-*/
-
-.shop{
-    padding: 70px 0 80px;
+.section__shop{
+    width: 90%;
+    padding: 100px 5%;
 }
 
-.shop_title{
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--primary);
+.shop__title{
+    font-weight: bold;
+    font-size: 44px;
+    color: var(--colorMain);
 }
 
-.shop_description{
-    color: var(--text-secondary);
-    font-weight: 400;
+.shop__description{
+    color: var(--colorText);
+    width: 40%;
+    font-weight: normal;
     font-size: 15px;
-    width: 80%;
-    margin-bottom: 40px;
+    padding-top: 10px;
 }
 
 .shop__categories{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 18px;
-    padding-top: 18px;
-    margin-bottom: 30px;
-}
-
-.shop_subtitle{
-    font-size: 15px;
-    color: var(--text-light);
-}
-
-.shop__search{
-    position: relative;
-    margin-bottom: 35px;
-    margin-top: 17px;
-}
-
-.shop__search input{
-    width: 100%;
-    height: 65px;
-    border: none!important;
-    box-shadow: none!important;
-    outline: none!important;
-    padding-left: 70px;
-    background: var(--elements);
-    color: var(--text-light);
-}
-
-.shop__search img{
-    position: absolute;
-    left: 20px;
-    top: 20px;
+    padding-top: 50px;
 }
 
 .shop__category{
-    background-color: var(--elements);
-    color: var(--text-secondary);
-    font-weight: 400!important;
-    padding: 20px 60px;
+    margin: 0 15px 15px 0;
+    background-color: var(--backgroundSecond);
+    color: var(--colorText);
+    font-weight: 500;
+    padding: 20px 70px;
     cursor: pointer;
 }
 
 .shop__categories .active, .shop__category:hover{
-    color: var(--primary);
+    color: var(--colorMain);
 }
 
 .shop__category:nth-child(1){
@@ -78,60 +44,57 @@
 }
 
 .shop__cards{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .shop__card{
-    background-color: var(--elements);
-    padding: 22px;
+    background-color: var(--backgroundSecond);
+    padding: 13% 10%;
     margin-bottom: 22px;
 }
 
-.shop__card__img_small{
-    max-width: 91px;
-    max-height: 91;
+.shop__icon{
+    width: 57px;
+    max-width: 100%;
 }
 
 .shop__card__title{
-    color: var(--primary);
-    margin-top: 30px;
-    font-size: 21px;
+    color: var(--colorMain);
+    margin-top: 50px;
 }
 
 .shop__card__description{
-    color: var(--text-secondary);
-    width: 90%;
+    color: var(--colorText);
     font-weight: 400;
     font-size: 14px;
     margin-top: 10px;
 }
 
 .shop__card__price{
-    margin-top: 30px;
+    margin-top: 50px;
     font-weight: 400;
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--colorText);
 }
 
 .shop__card__price span{
     margin-left: 2px;
-    color: var(--text-light);
-    font-weight: 500;
+    color: var(--colorDefault);
+    font-weight: 600;
     font-size: 18px;
 }
 
 .shop__card__purchase{
-    margin-top: 20px;
-    background-color: var(--background);
-    width: 100%;
-    color: var(--primary);
-    font-weight: 500;
-    font-size: 15px;
+    margin-top: 40px;
+    background-color: var(--backgroundMain);
+    color: var(--colorMain);
+    font-weight: 600;
+    font-size: 14px;
     padding: 20px 25px;
+    width: 200px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    gap: 20px;
     transition: .3s;
 }
 
@@ -140,26 +103,35 @@
     transition: .3s;
 }
 
-.shop__card__second{
-    background-color: var(--elements);
-    margin-bottom: 22px;
+.shop__card__icon{
+    margin-right: 17px;
+    width: 20px;
 }
 
-.shop__card__img_full{
-    width: 100%;
-}
-
-.shop__card__second_content{
-    padding: 22px;
-    padding-top: 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .shop_description{
-        width: 100%;
+@media only screen and (max-width: 1100px) {
+    .section__shop{
+        padding: 50px 5% 80px;
     }
 
-    .shop{
-        margin-top: 30px;
+    .shop__title{
+        font-size: 38px;
+    }
+
+    .shop__description{
+        width: 100%;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .shop__card__purchase{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .shop__category{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 12px;
     }
 }

@@ -1,44 +1,31 @@
-/*
+/* FAQ */
 
-    Sellix.me
-    ------------
-    Version 0.2.24
-
-*/
-
-.faq{
-    padding: 0 0 80px;
+.section__faq{
+    padding: 0 5% 100px;
 }
 
-.faq_title{
-    font-size: 26px;
-    font-weight: 600;
-    color: var(--primary);
+.faq__title{
+    font-weight: bold;
+    font-size: 44px;
+    color: var(--colorMain);
 }
 
-.faq_description{
-    color: var(--text-secondary);
-    font-weight: 400;
+.faq__description{
+    color: var(--colorText);
+    width: 40%;
+    font-weight: normal;
     font-size: 15px;
-    width: 80%;
+    padding-top: 10px;
 }
 
-.faq_description::after{
-    content: "";
-    position: static;
-    display: block;
-    border-radius: 100px;
-    margin-top: 35px;
-    margin-bottom: 38px;
-    height: 1.7px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(39,35,51,1) 0%, rgba(19,17,26,0) 75%);
+.faq__cards{
+    margin-top: 50px;
 }
 
 .faq__card{
-    width: 100%;
-    background-color: var(--elements);
-    padding: 30px 50px 13px 30px;
+    width: 90%;
+    background-color: var(--backgroundSecond);
+    padding: 4% 5%;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -46,30 +33,59 @@
 }
 
 .faq__card__text__title{
-    color: var(--primary);
-    font-size: 19px;
+    color: var(--colorMain);
 }
 
 .faq__card__description{
-    color: var(--text-secondary);
+    color: var(--colorText);
     font-weight: normal;
     font-size: 14px;
     width: 90%;
 }
 
-.faq__card__plus{
-    margin-top: -20px;
-}
-
 .faq__card__content{
-    padding: 5px 0 50px;
-    color: var(--text-secondary);
+    padding: 15px 2% 50px;
+    color: var(--colorText);
     font-weight: normal;
     font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-    .faq_description{
-        width: 100%;
+@media only screen and (max-width: 1100px) {
+    .section__faq{
+        margin-top: -20px;
+        padding: -60px 5% 0px;
     }
+
+    .faq__title{
+        font-size: 38px;
+    }
+
+    .faq__description{
+        width: 100%;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .faq__card{
+        width: 90%;
+        background-color: var(--backgroundSecond);
+        padding: 6% 5%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .faq__card__content{
+        padding: 15px 2% 50px;
+    }
+
+    .faq__card__description{
+        width: 80%;
+    }
+
+    .faq__card__plus{
+        margin-right: 15px;
+    }
+
 }
