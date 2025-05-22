@@ -1,0 +1,16 @@
+/*
+
+    Sellix.me
+    ------------
+    Version 0.2.24
+
+*/
+
+.head_baner{
+    background-color: var(--elements);
+    color: var(--primary);
+    text-align: center;
+    padding: 11px 4px;
+    font-weight: 400;
+    font-size: 14px;
+}

@@ -1,0 +1,171 @@
+/*
+
+    Sellix.me
+    ------------
+    Version 0.2.24
+
+*/
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--elements);
+    border-radius: 0;
+}
+
+/* Website style */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--background);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navbar{
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_nav{
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    margin-top: 12px;
+}
+
+.navbar_brand{
+    color: var(--text-light);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar_nav li a{
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.navbar_nav li a:hover{
+    color: var(--text-light);
+    transition: .2s;
+}
+
+.navbar_nav li a.active{
+    color: var(--text-light);
+}
+
+.navbar_button{
+    background: var(--elements);
+    color: var(--primary)!important;
+    padding: 10px 34px;
+}
+
+.navbar_button:hover{
+    background: var(--primary);
+    color: var(--text-light)!important;
+}
+
+.navbar_toggle{
+    display: none;
+}
+
+.row-center{
+    display: flex;
+    align-items: center;
+}
+
+/* Container */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+}
+
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1580px;
+    }
+}
+
+.container-fluid--header{
+    max-width: 100%;
+}
+
+@media (min-width: 1600px) {
+    .container-fluid--header {
+        max-width: 1920px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .navbar_nav{
+        display: none;
+    }
+
+    .navbar{
+        padding-top: 40px;
+    }
+
+    .navbar_toggle{
+        display: block;
+    }
+
+    .navbar_mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar_nav li{
+        margin-bottom: 20px;
+    }
+
+    .navbar_nav--active{
+        display: block;
+        position: absolute;
+        z-index: 999;
+        top: 70px;
+        background: var(--backgroundSecondary);
+        width: 100%;
+        margin-left: -10px;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 581px) {
+    .container{
+        padding: 20px 7%;
+    }
+
+    .navbar_nav--active{
+        width: calc(86% + 20px);
+    }
+}

@@ -1,0 +1,111 @@
+/*
+
+    Sellix.me
+    ------------
+    Version 0.2.24
+
+*/
+
+.footer{
+    padding: 50px 0 50px;
+}
+
+.footer_nav_links{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.footer_title{
+    color: var(--text-light);
+    font-size: 24px;
+}
+
+.footer_description{
+    color: var(--text-secondary);
+    font-size: 15px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.footer_footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.footer_nav_header{
+    font-size: 15px;
+    color: var(--primary);
+}
+
+.footer_nav{
+    list-style: none;
+}
+
+.footer_nav li a{
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-secondary);
+    transition: .2s;
+}
+
+.footer_nav li a:hover{
+    transition: .2s;
+    color: var(--text-light);
+}
+
+.footer_footer a{
+    color: var(--primary);
+}
+
+.footer_icons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_icon{
+    background-color: var(--elements);
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.footer_icon:hover{
+    opacity: 0.7;
+    transition: .2s;
+}
+
+@media only screen and (max-width: 1300px) {
+    .footer_nav_links{
+        text-align: left;
+    }
+
+    .footer{
+        margin-top: 40px;
+    }
+
+    .footer_nav{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_footer{
+        gap: 0px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer_description{
+        width: 100%;
+    }
+}
